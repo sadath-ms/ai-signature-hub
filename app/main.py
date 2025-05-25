@@ -1,8 +1,13 @@
 from fastapi import FastAPI
 from app.services.redis_service import redis_client
 from app.services.elastic_service import elastic
+from app.routers import upload
 
-app = FastAPI()
+app = FastAPI(title="FastAPI S3 File Upload")
+
+app.include_router(upload.router)
+
+# app = FastAPI()
 
 @app.get("/")
 def read_root():

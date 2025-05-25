@@ -5,4 +5,6 @@ redis==4.5.5
 elasticsearch==8.9.0
 python-dotenv==1.0.1
 alembic==1.13.1
-
+# boto3==1.26.153
+python-multipart==0.0.6
+aioboto3==10.4.0
