@@ -12,6 +12,8 @@ services:
       - elasticsearch
     env_file:
       - .env
+    volumes:
+      - .:/app
     networks:
       - backend
 
